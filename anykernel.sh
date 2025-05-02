@@ -23,11 +23,15 @@ supported.vendorpatchlevels=
 
 ### AnyKernel install
 ## boot shell variables
-block=boot
-is_slot_device=auto
+
 ramdisk_compression=auto
 patch_vbmeta_flag=auto
 no_magisk_check=1
+
+BLOCK=/dev/block/platform/omap/omap_hsmmc.0/by-name/boot;
+IS_SLOT_DEVICE=0;
+RAMDISK_COMPRESSION=auto;
+PATCH_VBMETA_FLAG=auto;
 
 # import functions/variables and setup patching - see for reference (DO NOT REMOVE)
 . tools/ak3-core.sh
